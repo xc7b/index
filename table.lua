@@ -72,7 +72,7 @@ getgenv().Index = {
             ['Skybox'] = {
                 ['Enabled'] = true, -- [[ broken ]]
                 ['SkyboxID'] = 'rbxassetid://106428636831184', -- [[ default is index skybox ]]
-            }
+            },
             ['Resolver'] = {
                 ['Active'] = false,
                 ['Keybind'] = 'G',

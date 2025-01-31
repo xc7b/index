@@ -33,19 +33,19 @@ getgenv().Index = {
         ["AimBot"] = {
             ['Active'] = true,
             ['Keybind'] = 'C',
-            ['Smoothness'] = 1,
+            ['Smoothness'] = 0.058,
             ['Predictions'] = 0.18,
             ['TargetParts'] = 'Head',
             ['ClosestPart'] = false,
             ['Notification'] = false,
         },
         ["Style"] = {
-            ['Easing'] = 'Elastic', -- [[ Linear, Sine, Quad, Cubic, Exponential, Back, Bounce, Elastic ]]
-            ['Direction'] = 'InOut', -- [[ In, Out, InOut ]]
+            ['Easing'] = 'Linear', -- [[ Linear, Sine, Quad, Cubic, Exponential, Back, Bounce, Elastic ]]
+            ['Direction'] = 'Out', -- [[ In, Out, InOut ]]
         },
         ['HitboxExpander'] = {
-            ['Enabled'] = true,
-            ['Visualize'] = true,
+            ['Enabled'] = false,
+            ['Visualize'] = false,
             ['NormalSize'] = 15,     
             ['Scaling'] = { -- [[ custom scaling if u dont want to use the same value for each x,y,z ]]
                 ['Enabled'] = false, -- [[ if "false" then uses "normalsize" ]]
@@ -56,22 +56,28 @@ getgenv().Index = {
         },
         ["MouseTp"] = {
             ['Active'] = true,
-            ['LerpValues'] = 1,
+            ['LerpValues'] = 0.25,
             ['MousePredictions'] = 0.1,
         },
         ["TriggerBot"] = {
-            ['Enabled'] = true,
+            ['Enabled'] = false,
             ['Keybind'] = 'T',
             ['Delay'] = 0.0001, -- [[ this is literally fucking Prediction ]]
-            ['Notification'] = true,
+            ['Notification'] = false,
             ['Blacklisted'] = { -- [[ can add any weapon / item to this such as food, katana and other things]]
                 "[Knife]"
             },
         },
         ["Misc"] = {
             ['Skybox'] = {
-                ['Enabled'] = true, -- [[ broken ]]
-                ['SkyboxID'] = 'rbxassetid://106428636831184', -- [[ default is index skybox ]]
+                ['Enabled'] = false,
+                ['SkyboxTexture'] = 'Redshift', -- [[ Default, Vaporwave, Redshift, Desert, DaBaby, Minecraft, SpongeBob, Skibidi, Blaze, Pussy Cat, Among Us, Space Wave, Space Wave2, Turquoise Wave, Dark Night, Bright Pink, White Galaxy ]] | credits tsol  my best friend in skidding (temporary till i feel like making a skybox ) 
+            },
+            ["Textures"] = {
+                ['Active'] = true,
+                ['Material'] = 'Marble', -- [[ https://create.roblox.com/docs/reference/engine/enums/Material ]]
+                ['UseColor'] = false,
+                ['Color'] = Color3.fromRGB(255,255,255),
             },
             ['Resolver'] = {
                 ['Active'] = false,
@@ -90,7 +96,7 @@ getgenv().Index = {
                 ['Variety'] = 'Third', -- First, Third
             },
             ['Spin'] = {
-                ['Keybind'] = 'Z',
+                ['Keybind'] = 'V',
                 ['Degrees'] = 360,
                 ['Acceleration'] = 4000,
                 ['Directions'] = 'North',
@@ -108,7 +114,10 @@ getgenv().Index = {
             ['Checks'] = {
                 ['KO'] = true,
                 ['Wall'] = true,
+                ['Typing'] = true,
                 ['ForceField'] = true,
+                ['Vehicle'] = true,
+                ['Grabbed'] = true
             }
         },
     },

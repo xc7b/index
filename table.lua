@@ -2,7 +2,7 @@ getgenv().Index = {
     ["Start"] = {
         ["Options"] = { 
             ['Intro'] = true,
-            ['License'] = '', -- [[ place your luarmor key here ]]
+            ['License'] = 'PUT_YOUR_KEY_HERE_NIGGA',
         },
         ["Silent"] = {
             ['Type'] = 'Target', -- [[ FOV, Target ]]

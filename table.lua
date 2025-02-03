@@ -2,16 +2,17 @@ getgenv().Index = {
     ["Start"] = {
         ["Options"] = { 
             ['Intro'] = true,
-            ['License'] = 'PUT_YOUR_KEY_HERE_NIGGA',
+            ['Version'] = 'V2.3',
+            ['License'] = 'keygoeshere', -- [[ luarmor key ]]
         },
         ["Silent"] = {
             ['Type'] = 'Target', -- [[ FOV, Target ]]
-            ['Prediction'] = 0.02,
-            ['TargetParts'] = 'Head',
+            ['Prediction'] = 0,
+            ['TargetParts'] = 'UpperTorso',
             ['Air'] = 'Head',
-            ['ClosestPart'] = false,
-            ['ClosestPoint'] = true,
-            ['ClosestPointMode'] = 'Full', -- [[ Partial, Full ]]
+            ['ClosestPart'] = true,
+            ['NearestPoint'] = true,
+            ['NearestPointMode'] = 'Full', -- [[ Partial, Full ]]
             ['AntiAimViewer'] = true,
             ['FOV'] = {
                 ['Transparency'] = 1,
@@ -23,25 +24,25 @@ getgenv().Index = {
         },
         ["SilentOffsets"] = { 
             ['Jump'] = -0.15, 
-            ['Fall'] = 0 
+            ['Fall'] = -6
         },
         ["AimbotOffsets"] = { 
             ['Active'] = true, 
-            ['Jump'] = 4, 
+            ['Jump'] = 0, 
             ['Fall'] = 0.125 
         },
         ["AimBot"] = {
             ['Active'] = true,
             ['Keybind'] = 'C',
-            ['Smoothness'] = 0.058,
-            ['Predictions'] = 0.18,
+            ['Smoothness'] = 0.07,
+            ['Predictions'] = 0.03,
             ['TargetParts'] = 'Head',
             ['ClosestPart'] = false,
             ['Notification'] = false,
         },
         ["Style"] = {
             ['Easing'] = 'Linear', -- [[ Linear, Sine, Quad, Cubic, Exponential, Back, Bounce, Elastic ]]
-            ['Direction'] = 'Out', -- [[ In, Out, InOut ]]
+            ['Direction'] = 'In', -- [[ In, Out, InOut ]]
         },
         ['HitboxExpander'] = {
             ['Enabled'] = false,
@@ -55,7 +56,7 @@ getgenv().Index = {
             },
         },
         ["MouseTp"] = {
-            ['Active'] = true,
+            ['Active'] = false,
             ['LerpValues'] = 0.25,
             ['MousePredictions'] = 0.1,
         },
@@ -63,26 +64,26 @@ getgenv().Index = {
             ['Enabled'] = false,
             ['Keybind'] = 'T',
             ['Delay'] = 0.0001, -- [[ this is literally fucking Prediction ]]
-            ['Notification'] = false,
+            ['Notification'] = true,
             ['Blacklisted'] = { -- [[ can add any weapon / item to this such as food, katana and other things]]
                 "[Knife]"
             },
         },
         ["Misc"] = {
             ['Skybox'] = {
-                ['Enabled'] = false,
-                ['SkyboxTexture'] = 'Redshift', -- [[ Default, Vaporwave, Redshift, Desert, DaBaby, Minecraft, SpongeBob, Skibidi, Blaze, Pussy Cat, Among Us, Space Wave, Space Wave2, Turquoise Wave, Dark Night, Bright Pink, White Galaxy ]] | credits tsol  my best friend in skidding (temporary till i feel like making a skybox ) 
+                ['Enabled'] = true, -- [[ enable / disable switch is broken currently ]] 
+                ['SkyboxTexture'] = 'Minecraft', -- [[ Default, Vaporwave, Redshift, Desert, DaBaby, Minecraft, SpongeBob, Skibidi, Blaze, Pussy Cat, Among Us, Space Wave, Space Wave2, Turquoise Wave, Dark Night, Bright Pink, White Galaxy ]] | credits tsol  my best friend in skidding (temporary till i feel like making a skybox ) 
             },
             ["Textures"] = {
                 ['Active'] = true,
-                ['Material'] = 'Marble', -- [[ https://create.roblox.com/docs/reference/engine/enums/Material ]]
+                ['Material'] = 'Rock', -- [[ https://create.roblox.com/docs/reference/engine/enums/Material ]]
                 ['UseColor'] = false,
                 ['Color'] = Color3.fromRGB(255,255,255),
             },
             ['Resolver'] = {
                 ['Active'] = false,
                 ['Keybind'] = 'G',
-                ['Mode'] = 'Delta', -- [[ Delta, Recalculate ]]
+                ['Method'] = 'Delta', -- [[ Delta, Recalculate ]]
                 ['Adjust'] = 0.2,
                 ['Notifications'] = false,
             },
@@ -98,7 +99,7 @@ getgenv().Index = {
             ['Spin'] = {
                 ['Keybind'] = 'V',
                 ['Degrees'] = 360,
-                ['Acceleration'] = 4000,
+                ['Acceleration'] = 4900,
                 ['Directions'] = 'North',
                 ['Smoothness'] = 1,
             },
@@ -113,10 +114,7 @@ getgenv().Index = {
             },
             ['Checks'] = {
                 ['KO'] = true,
-                ['Wall'] = true,
-                ['Typing'] = true,
-                ['ForceField'] = true,
-                ['Vehicle'] = true,
+                ['Visible'] = true,
                 ['Grabbed'] = true
             }
         },

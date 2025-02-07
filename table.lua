@@ -120,3 +120,5 @@ getgenv().Index = {
         },
     },
 }
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xc7b/index/refs/heads/main/loader.lua"))()

@@ -121,4 +121,4 @@ getgenv().Index = {
     },
 }
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/xc7b/index/refs/heads/main/loader.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/c3b91e872b1b9db6e796733164bd81cf.lua"))()

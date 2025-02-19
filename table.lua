@@ -2,7 +2,7 @@ getgenv().Index = {
     ['Start'] = {
         ['Options'] = { 
             Intro = true,
-            Version = '2.4',
+            Version = '2.4.1',
             License = 'key', -- [[ luarmor key ]]
         },
         ['Silent'] = {

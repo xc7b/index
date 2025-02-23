@@ -72,7 +72,7 @@ getgenv().Index = {
         },
         ["Misc"] = {
             ['Spread Modifier'] = {
-                ['Enabled'] = true,
+                ['Enabled'] = true, -- [[ 0-1 ]]
                 ['Value'] = 1, -- [[ 1 for no spread modification ]]
             },
             ['Skyboxes'] = {

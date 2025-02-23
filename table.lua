@@ -2,8 +2,8 @@ getgenv().Index = {
     ['Start'] = {
         ['Options'] = { 
             ['Intro'] = true,
-            ['Version'] = '2.4.2',
-            ['License'] = 'keygoeshere', -- [[ luarmor key ]]
+            ['Version'] = '2.5',
+            ['License'] = 'key', -- [[ luarmor key ]]
         },
         ['Silent'] = {
             ['Enabled'] = true,
@@ -71,6 +71,10 @@ getgenv().Index = {
             },
         },
         ["Misc"] = {
+            ['Spread Modifier'] = {
+                ['Enabled'] = true,
+                ['Value'] = 1, -- [[ 1 for no spread modification ]]
+            },
             ['Skyboxes'] = {
                 ['Enabled'] = false, -- [[ enable / disable switch is broken currently ]] 
                 ['SkyboxTexture'] = 'Minecraft', -- [[ Default, Vaporwave, Redshift, Desert, DaBaby, Minecraft, SpongeBob, Skibidi, Blaze, Pussy Cat, Among Us, Space Wave, Space Wave2, Turquoise Wave, Dark Night, Bright Pink, White Galaxy ]] | credits tsol  my best friend in skidding (temporary till i feel like making a skybox ) 

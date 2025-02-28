@@ -1,26 +1,27 @@
 getgenv().Index = {
     ['Start'] = {
         ['Options'] = { 
-            ['Intro'] = true,
-            ['Version'] = '2.5',
-            ['License'] = 'key', -- [[ luarmor key ]]
+            ['Intro'] = { ['Enabled'] = true, ['Use Sound'] = true, },
+            ['Execution Information'] = false,
+            ['Version'] = '2.6',
+            ['License'] = 'keygoeshere', -- [[ luarmor key ]]
         },
         ['Silent'] = {
             ['Enabled'] = true,
-            ['Type'] = 'Target', -- [[ FOV, Target ]]
-            ['Prediction'] = 0.0325,
-            ['Hitpart'] = 'Head',
+            ['Type'] = 'FOV', -- [[ FOV, Target ]]
+            ['Prediction'] = 0,
+            ['Hitpart'] = 'UpperTorso',
             ['AirPart'] = 'Head',
-            ['ClosestPart'] = false,
-            ['NearestPoint'] = false,
-            ['NearestPointMode'] = 'Full', -- [[ Partial, Full ]]
-            ['AntiAimViewer'] = false,
+            ['ClosestPart'] = true,
+            ['Nearest Point'] = false,
+            ['Nearest Point Mode'] = 'Full', -- [[ Scalar, Dynamic, Generic, Full ]]
+            ['Anti Aim Viewer'] = false,
             ['FOV'] = {
                     ['Transparency'] = 1,
                     ['Visible'] = false,
                     ['Thickness'] = 1,
                     ['Color'] = Color3.fromRGB(111, 111, 11),
-                    ['Radius'] = 200,
+                    ['Radius'] = 75,
             },
         },
         ['SilentOffsets'] = { 
@@ -28,22 +29,22 @@ getgenv().Index = {
             ['Fall'] = 0
         },
         ['AimbotOffsets'] = { 
-            ['Enabled'] = true, 
-            ['Jump'] = 0, 
-            ['Fall'] = 0
+            ['Enabled'] = false, 
+            ['Jump'] = 3, 
+            ['Fall'] = -12
         },
         ['Aimbot'] = {
             ['Enabled'] = true,
             ['Keybind'] = 'E',
-            ['Smoothness'] = 1,
+            ['Smoothness'] = 0.03,
             ['Prediction'] = 0.1,
-            ['Hitpart'] = 'Head',
+            ['Hitpart'] = 'UpperTorso',
             ['ClosestPart'] = false,
             ['Notification'] = false
         },
         ['Style'] = {
-            ['Easing'] = 'Sine', -- [[ Linear, Sine, Quad, Cubic, Exponential, Back, Bounce, Elastic ]]
-            ['Direction'] = 'Out' -- [[ In, Out, InOut ]]
+            ['Easing'] = 'Linear', -- [[ Linear, Sine, Quad, Cubic, Exponential, Back, Bounce, Elastic ]]
+            ['Direction'] = 'In' -- [[ In, Out, InOut ]]
         },
         ['HitboxExpander'] = {
             ['Enabled'] = false,
@@ -57,14 +58,14 @@ getgenv().Index = {
             },
         },
         ['MouseTp'] = {
-            ['Enabled'] = true,
-            ['LerpValues'] = 1,
-            ['MousePrediction'] = 0.1
+            ['Enabled'] = false,
+            ['LerpValues'] = 0.341941515,
+            ['MousePrediction'] = 0.18014512
         },
         ['TriggerBot'] = {
             ['Enabled'] = false,
             ['Keybind'] = 'T',
-            ['Delay'] = 0.0001, -- [[ this is literally fucking Prediction ]]
+            ['Prediction'] = 0.01, -- [[ also known as delay ]]
             ['Notification'] = true,
             ['Blacklisted'] = { -- [[ can add any weapon / item to this such as food, katana and other things]]
                    "[Knife]"
@@ -72,12 +73,12 @@ getgenv().Index = {
         },
         ["Misc"] = {
             ['Spread Modifier'] = {
-                ['Enabled'] = true, -- [[ 0-1 ]]
-                ['Value'] = 1, -- [[ 1 for no spread modification ]]
+                ['Enabled'] = true,
+                ['Value'] = 100, -- [[ 100 for no spread modification ]]
             },
             ['Skyboxes'] = {
-                ['Enabled'] = false, -- [[ enable / disable switch is broken currently ]] 
-                ['SkyboxTexture'] = 'Minecraft', -- [[ Default, Vaporwave, Redshift, Desert, DaBaby, Minecraft, SpongeBob, Skibidi, Blaze, Pussy Cat, Among Us, Space Wave, Space Wave2, Turquoise Wave, Dark Night, Bright Pink, White Galaxy ]] | credits tsol  my best friend in skidding (temporary till i feel like making a skybox ) 
+                ['Enabled'] = true, -- [[ enable / disable switch is broken currently ]] 
+                ['SkyboxTexture'] = 'Dark Night', -- [[ Default, Vaporwave, Redshift, Desert, DaBaby, Minecraft, SpongeBob, Skibidi, Blaze, Pussy Cat, Among Us, Space Wave, Space Wave2, Turquoise Wave, Dark Night, Bright Pink, White Galaxy ]] | credits tsol  my best friend in skidding (temporary till i feel like making a skybox ) 
             },
             ['Textures'] = {
                 ['Enabled'] = false,
@@ -111,7 +112,7 @@ getgenv().Index = {
             ['WalkSpeed'] = {
                 ['Enabled'] = true,
                 ['Mode'] = 'Humanoid', -- [[ Humanoid, CFrame ]] [[ cframe is NOT added yet ]]
-                ['Speed'] = 165,
+                ['Speed'] = 100,
                 ['Keybind'] = 'H' 
             },
             ['NoJumpCoolDown'] = {
@@ -119,8 +120,7 @@ getgenv().Index = {
             },
             ['Checks'] = {
                 ['KO'] = true,
-                ['Visible'] = true,
-                ['Grabbed'] = true
+                ['Wall Check'] = true,
             },
         },
     },
